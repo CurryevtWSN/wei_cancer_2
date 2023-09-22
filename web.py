@@ -7,7 +7,6 @@ import streamlit as st
 import seaborn as sns
 import shap
 import sklearn
-import xgboost
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import joblib
 
