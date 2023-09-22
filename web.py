@@ -43,10 +43,10 @@ st.sidebar.markdown('##### For communication and cooperation, please contact wsh
 
 
 #%%load model
-gbm_model = joblib.load('/Users/mac/Desktop/gbm_model.pkl')
+gbm_model = joblib.load('gbm_model.pkl')
 
 #%%load data
-hp_train = pd.read_csv('/Volumes/吴世楠/WIN/E盘相关文件/Spyder_2022.3.29/output/machinel/sy_output/wei_cancer_em/Gastric_cancer.csv')
+hp_train = pd.read_csv('Gastric_cancer.csv')
 features = ['LDL',
             'CEA',
             'CA724',
