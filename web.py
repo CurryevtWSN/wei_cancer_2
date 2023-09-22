@@ -9,6 +9,7 @@ import shap
 import sklearn
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import joblib
+import xgboost
 
 #%%不提示warning信息
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -42,7 +43,7 @@ st.sidebar.markdown('##### For communication and cooperation, please contact wsh
 
 
 #%%load model
-gbm_model = joblib.load('gbm_model.pkl')
+gbm_model = joblib.load('gbm3_model.pkl')
 
 #%%load data
 hp_train = pd.read_csv('Gastric_cancer.csv')
